@@ -1,3 +1,4 @@
 mistralai
 streamlit
 pandas
+openpyxl
