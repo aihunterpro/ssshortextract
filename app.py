@@ -25,6 +25,7 @@ def process_image_with_mistral(image_path, client, model, prompt):
 
     chat_response = client.chat.complete(model=model, messages=messages)
     phone_numbers_text = chat_response.choices[0].message.content
+    time.sleep(8)
     return phone_numbers_text
 
 # Function to extract phone numbers from bracketed list
